@@ -74,7 +74,7 @@ def custom_filter(context: ToolFilterContext, tool) -> bool:
     # Example logic: sirf mood wali tools show karo
     return tool.name.startswith("mood")
 
-mcp_params = MCPServerStreamableHttpParams(url="http://localhost:8001/mcp/")
+mcp_params = MCPServerStreamableHttpParams(url="http://localhost:8000/mcp/")
 
 async with MCPServerStreamableHttp(
     params=mcp_params,
